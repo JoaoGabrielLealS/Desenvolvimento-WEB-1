@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 2rem;
+    line-height: 1;
+    margin: auto 2rem;
+    text-align: center;
+    font-weight: 900;
+}
+
+#titulo {
+    width: 100%;
+    position: sticky;
+    z-index: 100;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#titulo h1 {
+    font-size: 48pt;
+    margin: 0;
+}
+
+#titulo h4 {
+    color: rgb(255, 245, 159);
+    font-family: monospace;
+    margin: 1rem auto 2rem auto;
+    font-size: 1rem;
+    font-weight: medium;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    width: fit-content;
+}
+
+#corpo {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+#corpo > p {
+    max-width: 75%;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    flex: 1;
+    min-width: 250px;
+}
+
+#imagem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#moldura-imagem {
+    margin: 2rem auto;
+    height: 200px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: .5rem;
+    outline: 8px solid rgb(222, 55, 55);
+    margin-bottom: 4rem;
+}
+
+#moldura-imagem img {
+    object-fit: cover;
+    filter: saturate(85%);
+    filter: brightness(.7);
+    height: 100%;
+    width: auto;
+    transition: box-shadow .3s, filter .3s;
+}
+
+#moldura-imagem img:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.622);
+    filter: brightness(1.5);
+    filter: saturate(100%);
+}
+
+#botao-mais {
+    width: fit-content;
+    height: fit-content;
+}
+
+#botao-mais a {
+    background-color: #f33434;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border-radius: 15rem;
+    box-shadow: 0 4px 15px #00000092;
+    transition: background .3s;
+}
+
+#botao-mais a:hover {
+    background-color: transparent;
+    outline: 2px solid red;
+}
+
+#botao-mais a:active {
+    background-color: #00000071;
+}
+
+.underscore-ponto-titulo {
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+    #titulo h1 {
+        font-size: 32pt;
+        margin: 0 2rem;
+    }
+
+    #titulo h4 {
+        font-size: 0.9rem;
+        
+    }
+
+    #corpo {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    #corpo > p {
+        max-width: 100%;
+        font-size: 1.2rem;
+    }
+
+    #imagem {
+        margin-top: 2rem;
+        flex: 1 100%;
+    }
+
+    #moldura-imagem {
+        height: 150px;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #moldura-imagem img {
+        height: 100%;
+        width: 100%;
+    }
+
+    #botao-mais a {
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #titulo h1 {
+        font-size: 28pt;
+    }
+
+    #titulo h4 {
+        font-size: 0.8rem;
+    }
+
+    #corpo > p {
+        font-size: 1rem;
+    }
+
+    #imagem {
+        margin-top: 1rem;
+    }
+
+    #moldura-imagem {
+        height: 120px;
+    }
+
+    #botao-mais a {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}

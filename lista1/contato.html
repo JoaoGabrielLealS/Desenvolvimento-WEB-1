@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./estilos/contato.css">
+</head>
+
+<body>
+    <h1 class="titulo-pagina">Contato</h1>
+
+    <div class="contexto">
+        <div id="menu">
+            <a href="./index.html">Início</a>
+            <a href="./projetos.html">Projetos</a>
+            <a href="./sobre-mim.html">Sobre</a>
+            <a class="selecionado" href="./contato.html">Contato</a>
+        </div>
+
+        <h4>Entre em contato via:</h4>
+        <p><strong>Whatsapp: </strong> +55 (33) 9 9866-4159</p>
+        <p><strong>E-mail: </strong> joaogabriel202340@hotmail.com</p>
+
+        <form action="#" method="post">
+            <h5>Ou, me deixe uma mensagem:</h5>
+            <fieldset>
+                <label for="nome">Seu nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome Completo" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="email">E-mail para contato:</label>
+                <input type="email" required name="email" id="email" placeholder="Email">
+            </fieldset>
+
+            <fieldset>
+                <label for="texto">Sua mensagem</label>
+                <textarea cols="3" name="texto" id="texto" placeholder="Insira aqui seu texto..." required></textarea>
+            </fieldset>
+            <input type="submit" value="Enviar" />
+        </form>
+    </div>
+</body>
+
+</html>
